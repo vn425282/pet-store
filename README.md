@@ -1,2 +1,39 @@
-# pet-store
-HEXAGONAL PET STORE
+# HEXAGONAL PET STORE
+
+【Assignment】 Sr. Web Developer (Mr. Nguyen Tri)
+* This project uses Laravel - The PHP Framework For Web Artisans
+
+
+## Installation PHP and Composer ( for Windown ) 
+
+* https://devanswers.co/install-composer-php-windows-10/
+
+## Installation ( for Mac) 
+
+* https://www.thoughtco.com/how-to-install-php-on-a-mac-2694012
+* https://duvien.com/blog/installing-composer-mac-osx
+
+## Install Library and Testing before running
+
+```
+1. composer install
+2. php artisan config:clear
+3. php artisan config:cache
+4. composer dump-autoload
+5. php ./vendor/phpunit/phpunit/phpunit
+6. php artisan serve --port 8000
+```
+
+## Uses case
+
+* The owner would like the system to give him a list of pets that should be in the showroom. Pets that have an option on them don’t need to be shown to customers. 
+
+* Buy new pets ( Auto check spaces for the pet before buy ). If spaces are full, you will get the error messages to notice for you what is the space for the pet that still available.
+
+* Occupancy report, the pet shop owner would like to know how many cats, dogs, birds he should be buying. Keep in mind that the owner has to keep space for any possible pet returns (insurance).
+
+## Links Ref
+
+* https://medium.com/azimolabs/ports-and-adapters-implementation-in-php-with-a-little-symfony-help-6d4fdbe830ba
+* https://blog.ndepend.com/hexagonal-architecture/
+* https://barryvanveen.nl/blog/49-what-is-a-command-bus-and-why-should-you-use-it
