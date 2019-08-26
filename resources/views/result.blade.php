@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Springer Nature</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+
+        <!-- Styles -->
+        <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 200;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .top-right {
+                position: absolute;
+                right: 10px;
+                top: 18px;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .title {
+                font-size: 84px;
+            }
+
+            .links > a {
+                color: #636b6f;
+                padding: 0 25px;
+                font-size: 13px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            .m-b-md {
+                margin-bottom: 30px;
+            }
+
+            #myTextarea {
+                width:500px;
+                background-color:#FFF;
+                color:#222;
+                font-family:Courier, monospace;
+                font-weight:normal;
+                font-size:24px;
+                resize:none;
+                line-height:40px;
+                padding-left:100px;
+                padding-right:100px;
+                padding-top:45px;
+                padding-bottom:34px;
+                background-image:url(https://static.tumblr.com/maopbtg/E9Bmgtoht/lines.png), url(https://static.tumblr.com/maopbtg/nBUmgtogx/paper.png);
+                background-repeat:repeat-y, repeat;
+                -webkit-border-radius:12px;
+                border-radius:12px;
+                -webkit-box-shadow: 0px 2px 14px #000;
+                box-shadow: 0px 2px 14px #000;
+                border-top:1px solid #FFF;
+                border-bottom:1px solid #FFF;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-center position-ref full-height">
+            <div class="content">
+                <div class="title m-b-md">
+                    Hexagonal Architect Petstore
+                </div>
+                <textarea name="myTextarea" id="myTextarea" cols="30" rows="10" readonly>{{ $title }}</textarea>
+                <div class="links">
+                    <a href="{{ url('/') }}">Back to Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript">
+    var textedJson = JSON.stringify(JSON.parse(document.getElementById("myTextarea").value), undefined, 2);
+    document.getElementById('myTextarea').value = textedJson;
+</script>
