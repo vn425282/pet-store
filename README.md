@@ -19,11 +19,10 @@
 
 ```
 1. composer install
-2. php artisan config:clear
-3. php artisan config:cache
-4. composer dump-autoload
-5. php ./vendor/phpunit/phpunit/phpunit
-6. php artisan serve --port 8000
+2. php artisan config:cache
+3. composer dump-autoload
+4. php ./vendor/phpunit/phpunit/phpunit
+5. php artisan serve --port 8000
 ```
 
 ## Uses case
