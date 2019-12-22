@@ -1,6 +1,6 @@
 # HEXAGONAL PET STORE
 
-【Assignment】 Sr. Web Developer (Mr. Nguyen Tri)
+Sr. Web Developer (Mr. Nguyen Tri)
 * This project uses Laravel - The PHP Framework For Web Artisans
 
 ![Alt text](https://i.ibb.co/y5yFrc9/Screen-Shot-2019-08-26-at-11-26-40-PM.png?raw=true "Title")
